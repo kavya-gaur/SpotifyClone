@@ -154,12 +154,12 @@ myProgressBar.addEventListener('change',()=>{
 
 document.getElementById("next").addEventListener('click',()=>{
     let idx = audioElement.src.indexOf("songs")+6;
-    console.log("as per me index - " + idx);
-    console.log("as per it index - " + audioElement.src.lastIndexOf("0"));
-    console.log(audioElement.src.charAt(idx).toString());
-    console.log(audioElement.src);  
+    // console.log("as per me index - " + idx);
+    // console.log("as per it index - " + audioElement.src.lastIndexOf("0"));
+    // console.log(audioElement.src.charAt(idx).toString());
+    // console.log(audioElement.src);  
     
-    console.log(document.getElementById(audioElement.src.charAt(idx)));
+    // console.log(document.getElementById(audioElement.src.charAt(idx)));
     document.getElementById(audioElement.src.charAt(idx)).classList.remove("fa-pause-circle");
     document.getElementById(audioElement.src.charAt(idx)).classList.add("fa-play-circle");
     let no = audioElement.src.charAt(idx);
@@ -176,7 +176,7 @@ document.getElementById("next").addEventListener('click',()=>{
             masterPlay.classList.remove("fa-play-circle");
             masterPlay.classList.add("fa-pause-circle");
             masterSongName.innerText = songs[no].songName;
-            console.log("k="+k);
+            //console.log("k="+k);
             k.classList.remove("fa-play-circle");
             k.classList.add("fa-pause-circle");
 })
